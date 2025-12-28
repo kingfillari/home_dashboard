@@ -49,7 +49,7 @@ Same colors and layout as the reference image
 
 Responsive layout for web and desktop
 
-🗂 Project Structure
+  ```🗂 Project Structure
 lib/
 ├── main.dart
 ├── routes.dart
