@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'screens/auth/welcome_screen.dart';
 import 'screens/auth/login_screen.dart';
 import 'screens/auth/register_screen.dart';
 import 'screens/home/home_dashboard.dart';
@@ -10,6 +11,7 @@ import 'screens/links/links_screen.dart';
 import 'screens/wifi/wifi_screen.dart';
 
 final Map<String, WidgetBuilder> appRoutes = {
+  '/': (context) => const WelcomeScreen(),
   '/login': (context) => const LoginScreen(),
   '/register': (context) => const RegisterScreen(),
   '/home': (context) => const HomeDashboard(),

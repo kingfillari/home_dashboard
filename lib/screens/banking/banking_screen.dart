@@ -9,21 +9,9 @@ class BankingScreen extends StatelessWidget {
       appBar: AppBar(title: const Text("Banking Activities")),
       body: ListView(
         children: const [
-          ListTile(
-            leading: Icon(Icons.arrow_downward),
-            title: Text("Deposit"),
-            subtitle: Text("\$500 added"),
-          ),
-          ListTile(
-            leading: Icon(Icons.arrow_upward),
-            title: Text("Withdrawal"),
-            subtitle: Text("\$200 withdrawn"),
-          ),
-          ListTile(
-            leading: Icon(Icons.swap_horiz),
-            title: Text("Transfer"),
-            subtitle: Text("\$100 sent"),
-          ),
+          ListTile(title: Text("Deposit \$500")),
+          ListTile(title: Text("Withdraw \$200")),
+          ListTile(title: Text("Transfer \$100")),
         ],
       ),
     );

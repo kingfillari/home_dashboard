@@ -8,15 +8,18 @@ class HomeDashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("HomeDashboard")),
-      body: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Column(
-          children: [
-            Expanded(
-              child: GridView.count(
+      body: SingleChildScrollView( // ✅ FIX #1
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: Column(
+            children: [
+              /// TOP GRID (4 CARDS)
+              GridView.count(
                 crossAxisCount: 2,
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
+                shrinkWrap: true, // ✅ FIX #2
+                physics: const NeverScrollableScrollPhysics(),
                 children: [
                   DashboardCard(
                     icon: Icons.attach_money,
@@ -44,14 +47,21 @@ class HomeDashboard extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
-            DashboardCard(
-              icon: Icons.wifi,
-              color: Colors.deepPurple,
-              title: "Wi-Fi",
-              onTap: () => Navigator.pushNamed(context, '/wifi'),
-            ),
-          ],
+
+              const SizedBox(height: 10),
+
+              /// WIFI CARD (CLOSE TO GRID, SAME DESIGN)
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.9,
+                child: DashboardCard(
+                  icon: Icons.wifi,
+                  color: Colors.deepPurple,
+                  title: "Wi-Fi",
+                  onTap: () => Navigator.pushNamed(context, '/wifi'),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

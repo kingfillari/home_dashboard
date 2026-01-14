@@ -11,23 +11,21 @@ class LoginScreen extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            TextField(decoration: const InputDecoration(labelText: "Email")),
-            TextField(
-              decoration: const InputDecoration(labelText: "Password"),
+            const TextField(decoration: InputDecoration(labelText: "Email")),
+            const TextField(
+              decoration: InputDecoration(labelText: "Password"),
               obscureText: true,
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacementNamed(context, '/home');
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  '/home',
+                  (route) => false,
+                );
               },
               child: const Text("Login"),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/register');
-              },
-              child: const Text("Create Account"),
             ),
           ],
         ),

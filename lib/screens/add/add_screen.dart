@@ -7,12 +7,7 @@ class AddScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Add Activity")),
-      body: const Center(
-        child: Text(
-          "Add new activities here",
-          style: TextStyle(fontSize: 18),
-        ),
-      ),
+      body: const Center(child: Text("Add new activities here")),
     );
   }
 }

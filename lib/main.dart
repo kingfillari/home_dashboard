@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Home Dashboard',
       debugShowCheckedModeBanner: false,
+      title: 'Home Dashboard',
       theme: appTheme,
-      initialRoute: '/login',
+      initialRoute: '/',
       routes: appRoutes,
     );
   }

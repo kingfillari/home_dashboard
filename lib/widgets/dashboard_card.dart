@@ -26,7 +26,7 @@ class DashboardCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 25,
+                radius: 26,
                 backgroundColor: color,
                 child: Icon(icon, color: Colors.white, size: 28),
               ),
@@ -37,9 +37,8 @@ class DashboardCard extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               const Text(
-                "Check your bank activities",
+                "Check activities",
                 style: TextStyle(fontSize: 12, color: Colors.grey),
-                textAlign: TextAlign.center,
               ),
             ],
           ),

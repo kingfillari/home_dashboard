@@ -6,7 +6,9 @@ class WifiScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Wi-Fi Activities")),
+      appBar: AppBar(
+        title: const Text("Wi-Fi Activities"),
+      ),
       body: ListView(
         children: const [
           ListTile(

@@ -11,7 +11,6 @@ class IdeasScreen extends StatelessWidget {
         children: const [
           ListTile(title: Text("Startup Idea")),
           ListTile(title: Text("Mobile App Idea")),
-          ListTile(title: Text("Business Plan")),
         ],
       ),
     );

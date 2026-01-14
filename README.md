@@ -1,3 +1,5 @@
+FILIMON GEBRETSADIK (4TH YEAR SOFTWARE ENGINEERING 2018E.C)-INDV.ASSIGN. Project – Flutter Dashboard Application
+
 🏠 Home Dashboard Flutter App
 
 A Flutter application that provides a dashboard-based user interface with full authentication flow and multiple activity sections such as Banking, Ideas, Add, Links, and Wi-Fi.
@@ -55,26 +57,26 @@ lib/
 ├── routes.dart
 ├── theme.dart
 ├── models/
-│   └── activity.dart
+│ └── activity.dart
 ├── widgets/
-│   └── dashboard_card.dart
+│ └── dashboard_card.dart
 ├── screens/
-│   ├── auth/
-│   │   ├── welcome_screen.dart
-│   │   ├── login_screen.dart
-│   │   └── register_screen.dart
-│   ├── home/
-│   │   └── home_dashboard.dart
-│   ├── banking/
-│   │   └── banking_screen.dart
-│   ├── ideas/
-│   │   └── ideas_screen.dart
-│   ├── add/
-│   │   └── add_screen.dart
-│   ├── links/
-│   │   └── links_screen.dart
-│   └── wifi/
-│       └── wifi_screen.dart
+│ ├── auth/
+│ │ ├── welcome_screen.dart
+│ │ ├── login_screen.dart
+│ │ └── register_screen.dart
+│ ├── home/
+│ │ └── home_dashboard.dart
+│ ├── banking/
+│ │ └── banking_screen.dart
+│ ├── ideas/
+│ │ └── ideas_screen.dart
+│ ├── add/
+│ │ └── add_screen.dart
+│ ├── links/
+│ │ └── links_screen.dart
+│ └── wifi/
+│ └── wifi_screen.dart
 
 ▶️ How to Run the Project
 1️⃣ Prerequisites
@@ -102,7 +104,6 @@ flutter pub get
 
 5️⃣ Run the App
 flutter run
-
 
 Choose a device:
 
@@ -148,4 +149,4 @@ This project is created for educational purposes.
 
 👨‍🎓 Author
 
-Student Project – Flutter Dashboard Application
+FILIMON GEBRETSADIK (4TH YEAR SOFTWARE ENGINEERING 2018E.C)-INDV.ASSIGN. Project – Flutter Dashboard Application
